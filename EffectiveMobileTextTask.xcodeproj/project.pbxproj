@@ -3,8 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		70CBB4BF2DF0221D00F9B7DA /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 70CBB4BE2DF0221D00F9B7DA /* NetworkKit */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		70CBB4872DF0202200F9B7DA /* PBXContainerItemProxy */ = {
@@ -30,7 +34,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		70CBB4982DF0202200F9B7DA /* Exceptions for "EffectiveMobileTextTask" folder in "EffectiveMobileTextTask" target */ = {
+		70CBB4982DF0202200F9B7DA /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -40,24 +44,9 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		70CBB46F2DF0202100F9B7DA /* EffectiveMobileTextTask */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				70CBB4982DF0202200F9B7DA /* Exceptions for "EffectiveMobileTextTask" folder in "EffectiveMobileTextTask" target */,
-			);
-			path = EffectiveMobileTextTask;
-			sourceTree = "<group>";
-		};
-		70CBB4892DF0202200F9B7DA /* EffectiveMobileTextTaskTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = EffectiveMobileTextTaskTests;
-			sourceTree = "<group>";
-		};
-		70CBB4932DF0202200F9B7DA /* EffectiveMobileTextTaskUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = EffectiveMobileTextTaskUITests;
-			sourceTree = "<group>";
-		};
+		70CBB46F2DF0202100F9B7DA /* EffectiveMobileTextTask */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (70CBB4982DF0202200F9B7DA /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = EffectiveMobileTextTask; sourceTree = "<group>"; };
+		70CBB4892DF0202200F9B7DA /* EffectiveMobileTextTaskTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = EffectiveMobileTextTaskTests; sourceTree = "<group>"; };
+		70CBB4932DF0202200F9B7DA /* EffectiveMobileTextTaskUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = EffectiveMobileTextTaskUITests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70CBB4BF2DF0221D00F9B7DA /* NetworkKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +115,7 @@
 			);
 			name = EffectiveMobileTextTask;
 			packageProductDependencies = (
+				70CBB4BE2DF0221D00F9B7DA /* NetworkKit */,
 			);
 			productName = EffectiveMobileTextTask;
 			productReference = 70CBB46D2DF0202100F9B7DA /* EffectiveMobileTextTask.app */;
@@ -200,6 +191,7 @@
 				};
 			};
 			buildConfigurationList = 70CBB4682DF0202100F9B7DA /* Build configuration list for PBXProject "EffectiveMobileTextTask" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -208,7 +200,9 @@
 			);
 			mainGroup = 70CBB4642DF0202100F9B7DA;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
+			packageReferences = (
+				70CBB4BD2DF0221D00F9B7DA /* XCLocalSwiftPackageReference "NetworkKit" */,
+			);
 			productRefGroup = 70CBB46E2DF0202100F9B7DA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -297,6 +291,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +320,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,7 +387,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -449,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -571,6 +567,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		70CBB4BD2DF0221D00F9B7DA /* XCLocalSwiftPackageReference "NetworkKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = NetworkKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		70CBB4BE2DF0221D00F9B7DA /* NetworkKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetworkKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 70CBB4652DF0202100F9B7DA /* Project object */;
 }
